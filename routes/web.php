@@ -47,3 +47,7 @@ Route::prefix('program')->group(function () {
         echo "Ini halaman Kunjungan Industri";
     });
 });
+
+Route::get('/about-us', function () {
+    return view("aboutus");
+});

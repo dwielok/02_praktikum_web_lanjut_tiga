@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
@@ -51,3 +52,5 @@ Route::prefix('program')->group(function () {
 Route::get('/about-us', function () {
     return view("aboutus");
 });
+
+Route::resource('contact-us', ContactUsController::class);

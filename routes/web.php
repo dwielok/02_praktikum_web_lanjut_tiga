@@ -35,3 +35,15 @@ Route::prefix('category')->group(function () {
 
 Route::get('/news', [NewsController::class, 'index']);
 Route::get('/news/{id}', [NewsController::class, 'details']);
+
+Route::prefix('program')->group(function () {
+    Route::get('/karir', function () {
+        echo "Ini halaman Karir";
+    });
+    Route::get('/magang', function () {
+        echo "Ini halaman Magang";
+    });
+    Route::get('/kunjungan-industri', function () {
+        echo "Ini halaman Kunjungan Industri";
+    });
+});
